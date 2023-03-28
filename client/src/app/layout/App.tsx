@@ -1,6 +1,8 @@
+
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Container } from "@mui/system";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Catalog from "../../features/catalog/Catalog";
 import Header from "./Header";
 
@@ -10,7 +12,7 @@ function App() {
   const theme = createTheme({
     palette: {
       mode: palatteType,
-      background:{
+      background: {
         default: palatteType === 'light' ? '#eaeaea' : '#121212'
       }
     }
@@ -25,7 +27,7 @@ function App() {
       <CssBaseline />
       <Header darkmode={darkMode} handleThemeChange={handleThemeChange} />
       <Container>
-        <Catalog />
+        <Outlet />
       </Container>
     </ThemeProvider>
   );

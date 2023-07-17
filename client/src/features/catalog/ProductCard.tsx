@@ -2,7 +2,7 @@ import { Avatar, Button, Card, CardActions, CardContent, CardHeader, CardMedia, 
 import { Link } from "react-router-dom";
 import { Product } from "../../app/models/product";
 import { useState } from "react";
-import agent from "../../api/agent";
+import agent from "../../app/api/agent";
 import { error } from "console";
 import { LoadingButton } from "@mui/lab";
 

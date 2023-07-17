@@ -3,6 +3,7 @@ import { AppBar, Badge, IconButton, List, ListItem, Switch, Toolbar, Typography 
 import { Box } from "@mui/system";
 import { Link, NavLink } from "react-router-dom";
 
+
 const midLinks = [
     { title: 'catalog', path: '/catalog' },
     { title: 'about', path: '/about' },
@@ -31,6 +32,8 @@ interface Props {
     darkmode: boolean;
     handleThemeChange: () => void;
 }
+
+
 
 export default function Header({ darkmode, handleThemeChange }: Props) {
     return (

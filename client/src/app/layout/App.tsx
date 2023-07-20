@@ -24,6 +24,9 @@ useEffect(()=>{
     .catch(error=>console.log(error))
     .finally(()=> setLoading(false));
   }
+  else{
+    setLoading(false);
+  }
 },[setBasket])
 
   const [darkMode, setDarkMode] = useState(false);
